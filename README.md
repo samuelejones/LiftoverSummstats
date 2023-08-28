@@ -23,6 +23,10 @@ then enter the directory by typing
 ```
 cd LiftoverSummstats
 ```
+and make the bash script executable (give it run permissions) by typing
+```
+chmod +x liftover_summstats.sh
+```
 
 ### 2. Install conda LIFTOVER environment
 Install the environment using the provided `.yml` file:
@@ -50,11 +54,10 @@ wget https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/hg38.fa.gz
 to download the reference genomes to the script's directory. Each file is approximately 1Gb in size.
 
 ### 4. Edit the shell script and enter the commands and file locations (if needed)
-By default, the script assumes you will be using the LIFTOVER conda environment and will download the reference genomes to the same folder as the script. If either of these are not true, edit the `liftover_summstats.sh` script and
-- set the `loadcondaenv` and `unloadcondaenv` to the empty string (if not using the conda environment)
+By default, the script assumes you will be using the `LIFTOVER` conda environment (provided) and that you download the reference genomes (`hg19.fa.gz` and `hg38.fa.gz`) to the same folder as the script. If either of these are not true, edit the `liftover_summstats.sh` script and
+- set the `loadcondaenv` and `unloadcondaenv` to the empty string (if not using the conda environment) or change the environment name (if using another environment containing all the required software)
 - set the location of the reference genomes in the respective `reffile19` and `reffile38` variables
-- set the Picard command in the `picardcmd` variable. If set to the empty string, the script will assume picard can be exected using the command `picard`. If your Picard executable is a .jar file, you can set the `picardcmd` variable to `java -jar /path/to/picard.jar` where `/path/to` describes the location of the `picard.jar` file
-.
+- set the Picard command in the `picardcmd` variable. If set to the empty string, the script will assume picard can be exected using the command `picard`. If your Picard executable is a .jar file, you can set the `picardcmd` variable to `java -jar /path/to/picard.jar` where `/path/to/` describes the location of the `picard.jar` file.
 
 ## Running the script
 Run the script with the help flag will print the script's usage:
