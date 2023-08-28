@@ -2,6 +2,11 @@
 A shell (bash) script for lifting over GWAS summary statistics from hg19 to hg38 or vice-versa. The script makes use of Picard and UCSC FASTA files, and runs some basic checks on the input before attempting liftover. A conda environment file is provided which contains all required software.
 
 ## Requirements
+### System
+- Bash shell
+- >4Gb RAM
+- >2Gb free disk space (+ space for input and output summary files)
+
 ### Software
 - Picard Tools (https://broadinstitute.github.io/picard/)
 - Tabix (https://www.htslib.org/doc/tabix.html)
