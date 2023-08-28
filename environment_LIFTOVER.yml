@@ -1,0 +1,36 @@
+name: LIFTOVER
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - _libgcc_mutex=0.1=conda_forge
+  - _openmp_mutex=4.5=2_gnu
+  - bgenix=1.1.7=hfa204df_4
+  - boost-cpp=1.74.0=h75c5d50_8
+  - bzip2=1.0.8=h7f98852_4
+  - ca-certificates=2023.05.30=h06a4308_0
+  - curl=7.71.1=he644dc0_3
+  - htslib=1.9=h4da6232_3
+  - icu=70.1=h27087fc_0
+  - krb5=1.17.2=h926e7f8_0
+  - libcurl=7.71.1=hcdd3856_3
+  - libdeflate=1.2=h516909a_1
+  - libedit=3.1.20191231=he28a2e2_2
+  - libgcc-ng=11.2.0=h1d223b6_16
+  - libgomp=11.2.0=h1d223b6_16
+  - libssh2=1.10.0=ha56f1ee_2
+  - libstdcxx-ng=11.2.0=he4da1e4_16
+  - libzlib=1.2.11=h166bdaf_1014
+  - lz4-c=1.9.3=h9c3ff4c_1
+  - ncurses=6.3=h27087fc_1
+  - openjdk=8.0.152=h7b6447c_3
+  - openssl=1.1.1v=h7f8727e_0
+  - picard=1.141=hdfd78af_6
+  - readline=8.1=h46c0cb4_0
+  - sqlite=3.38.3=h4ff8645_0
+  - tabix=1.11=hdfd78af_0
+  - tk=8.6.12=h27826a3_0
+  - xz=5.2.5=h516909a_1
+  - zlib=1.2.11=h166bdaf_1014
+  - zstd=1.5.2=ha95c52a_0
