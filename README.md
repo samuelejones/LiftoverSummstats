@@ -4,8 +4,8 @@ A shell (bash) script for lifting over GWAS summary statistics from hg19 to hg38
 ## Requirements
 ### System
 - Bash shell
-- >4Gb RAM
-- >2Gb free disk space (+ space for input and output summary files)
+- \>4Gb RAM
+- \>2Gb free disk space (+ space for input and output summary files)
 
 ### Software
 - Picard Tools (https://broadinstitute.github.io/picard/)
