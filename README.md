@@ -34,7 +34,7 @@ chmod +x liftover_summstats.sh
 ```
 
 ### 2. Install conda LIFTOVER environment
-Install the environment using the provided `.yml` file:
+From the LiftoverSummstats directory, install the environment using the provided `.yml` file:
 ```    
 conda env create -f environment_LIFTOVER.yml
 ```
